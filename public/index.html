@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Recipe Sharing Platform</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+            <a href="#">Add Recipe</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Featured Recipes</h2>
+        <section class="featured-recipes">
+
+            <div class="recipe-card">
+                <img src="img/chocchip.jpg" alt="Choc Chip Cookies" width="2678" height="3349">
+                <h3>Delicious Chocolate Chip Cookies</h3>
+                <p>A classic recipe for soft and chewy chocolate chip cookies.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="img/margpizza.jpg" alt="Margherita Pizza" width="5980" height="3709">
+                <h3>Homemade Margherita Pizza</h3>
+                <p>Learn how to make the perfect Margherita pizza from scratch.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="img/Koftas.jpg" alt="Chicken Koftas" width="3456" height="5184">
+                <h3>Chicken Koftas</h3>
+                <p>Looking for new ideas with mince? Try these spicy koftas with a side of naan bread and rice.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="img/pasta.jpg" alt="Kale & Sausage Orecchiette" width="3035" height="4552">
+                <h3>Homemade Orrecchiette with Kale & Sausage</h3>
+                <p>Italian for little ears, orecchiette is the perfect shape for chucky sauces.</p>
+                <a href="#">View Recipe</a>
+            </div>
+        </section>
+
+        <section id="recipe-container"></section>
+
+        <section class="add-recipe">
+            <h3>Add a New Recipe</h3>
+            <a href="recipe.html">Add a New Recipe</a>
+            <!-- index.html -->
+            <form id="new-recipe-form" action="/recipes" method="POST">
+                <input type="text" name="title" placeholder="Title" required>
+                <textarea name="ingredients" placeholder="Ingredients" required></textarea>
+                <textarea name="instructions" placeholder="Instructions" required></textarea>
+                <button type="submit">Add Recipe</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Recipe Sharing Platform. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
